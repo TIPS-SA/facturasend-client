@@ -31,6 +31,7 @@ public class CreateDE {
 		//Creacion del Header
 		Map header = new HashMap();
 		header.put("Authorization", "Bearer api_key_<hdiweuw-92jwwle...>");
+		header.put("Content-Type", "application/json");
 		
 		Map result = HttpUtil.invocarRest(url, method, gson.toJson(data), header);
 		

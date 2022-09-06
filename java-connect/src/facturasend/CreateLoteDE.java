@@ -32,6 +32,7 @@ public class CreateLoteDE {
 		//Creacion del Header
 		Map header = new HashMap();
 		header.put("Authorization", "Bearer api_key_<hdiweuw-92jwwle...>");
+		header.put("Content-Type", "application/json");
 		
 		ArrayList<Map> datas = new ArrayList<Map>();
 		datas.add(data);
