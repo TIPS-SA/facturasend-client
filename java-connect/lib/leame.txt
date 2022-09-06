@@ -1,0 +1,12 @@
+No importar el archivo bcprov-jdk15on-160.jar como libreria del proyecto
+
+Este archivo debe moverse a su $JAVA_HOME/jre/lib/ext
+
+Luego debe editarse el archivo $JAVA_HOME/jre/lib/security/java.security
+
+Y buscar dentro del archivo la siguiente clave:
+security.provider.2=sun.security.rsa.SunRsaSign
+
+Se debe comentar lo anterior y reemplazarlo por:
+security.provider.2=org.bouncycastle.jce.provider.BouncyCastleProvider
+
