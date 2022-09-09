@@ -21,6 +21,7 @@ public class CreateDE {
 		
 		String url = "http://localhost:3002/api/empresa0/de/create";
 		//String url = "https://api.facturasend.com.py/<tenantId>/de/create";
+		String apiKey = "324234242342342432343432";
 		String method = "POST";
 		
 		//Creacion del Data
@@ -30,7 +31,7 @@ public class CreateDE {
 		
 		//Creacion del Header
 		Map header = new HashMap();
-		header.put("Authorization", "Bearer api_key_<hdiweuw-92jwwle...>");
+		header.put("Authorization", "Bearer api_key_" + apiKey);
 		header.put("Content-Type", "application/json");
 		
 		Map result = HttpUtil.invocarRest(url, method, gson.toJson(data), header);
