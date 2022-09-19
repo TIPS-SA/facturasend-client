@@ -336,9 +336,11 @@ public class CreateDE {
 		data.put("cambio", 6700.0);//si tipodocumento == 4 (autofactura) o 6 (notaDebito) o 7(notaRemision)
 		data.put("cliente", cliente);
 		data.put("usuario", usuario);
-		data.put("factura", factura);
-		data.put("autoFactura", autoFactura);
-		data.put("condicion", condicion);
+		data.put("notaCreditoDebito", notaCreditoDebito);//si tipodocumento es 5(notaCredito) o 6 (notaDebito)
+		data.put("remision", remision);//si tipodocumento == 7(notaRemision)
+		data.put("factura", factura);// solo si tipodocumento == 1 (factura)
+		data.put("autoFactura", autoFactura);//si tipodocumento == 4 (autofactura)
+		data.put("condicion", condicion);//si tipodocumento == 4 (autofactura) o 1 (factura)
 		data.put("items", items);
 		data.put("complementarios", complementarios);//si tipodocumento == 4 (autofactura)
 		data.put("detalleTransporte",detalleTransporte); //si tipodocumento == 7 (notaRemision) 
